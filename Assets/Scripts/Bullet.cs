@@ -7,12 +7,16 @@ public class Bullet : MonoBehaviour
     private Transform target;
     public GameObject impactEffect;
     public float explosionRadius = 0f;
-    public int damage = 50;
-
     public float speed = 70f;
+    private int damage;
 
-    public void Seek (Transform _target) {
+    void Start() {
+        damage = 50;
+    }
+
+    public void Seek (Transform _target, int turretDamage) {
         target = _target;
+        damage = turretDamage;
     }
 
     // Update is called once per frame
@@ -46,7 +50,6 @@ public class Bullet : MonoBehaviour
         } else {
             Damage(target);
         }
-        
         
         Destroy(gameObject);
         Debug.Log("We hit something");
