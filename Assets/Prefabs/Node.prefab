@@ -111,5 +111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBuildHoverColor: {r: 0.052910283, g: 0.2735849, b: 0.08456832, a: 0}
   cantBuildHoverColor: {r: 0.49056602, g: 0.0069419593, b: 0.0069419593, a: 0}
+  nodeUI: {fileID: 2942799059679813562, guid: 7804b004b87958b489ffcefe72535153, type: 3}
   currentTurret: {fileID: 0}
   positionOffset: {x: 0, y: 0.5, z: 0}
