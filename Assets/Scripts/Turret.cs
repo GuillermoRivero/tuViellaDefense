@@ -80,7 +80,6 @@ public class Turret : MonoBehaviour
 
         if (bullet != null) {
             if( turretAnimator != null){
-                Debug.Log("animator exists");
                 turretAnimator.Play("ShootAnimation");
             }
                 
